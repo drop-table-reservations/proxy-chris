@@ -9,8 +9,14 @@
 </head>
 <body>
   <div id="overview"></div>
-  <div id="app"></div>
+  <!-- <div id="photos"></div> -->
+  <div id="reviews"></div>
+  <script>
+    window.pathname = window.location.pathname;
+    window.restId = window.location.pathname.substring(13, pathname.length - 1);
+  </script>
   <script src="http://localhost:8008/bundle.js"></script>
+  <!--<script src="http://localhost:3005/bundle.js"></script>-->
   <script src="http://localhost:1337/bundle.js"></script>
 </body>
 </html>
